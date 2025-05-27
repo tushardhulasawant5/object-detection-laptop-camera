@@ -5,14 +5,6 @@ This project detects **animals in real time** using your laptop's webcam and the
 
 ---
 
-## 📷 Demo Snapshot
-
-> Real-time animal detection preview:
-
-![demo](demo/demo.gif) <!-- Replace this with your own gif or screenshot -->
-
----
-
 ## 🧠 What It Detects
 
 Only the following animals (based on COCO dataset classes):
@@ -90,7 +82,7 @@ object-detection-laptop-camera/
 ├── yolo_detect.py         # Animal-only YOLOv8 detection
 ├── test_camera.py         # Webcam test script
 ├── requirements.txt       # Dependencies
-├── demo/                  # Screenshots or GIFs
+├── .gitignore
 └── README.md              # This file
 ```
 
