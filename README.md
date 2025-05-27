@@ -1,106 +1,114 @@
 
-# 🎯 YOLOv8 Laptop Camera Object Detection
+# 🐾 Animal Detection Using YOLOv8 and Laptop Camera
 
-A real-time object detection system that uses your **laptop's webcam** powered by **YOLOv8** and **OpenCV**. This project demonstrates the power of computer vision to detect common objects from a live video stream with fast and accurate inference.
-
----
-
-## 📸 Live Demo Preview
-
-> Real-time object detection on webcam feed:
-
-![demo](demo/demo.gif) <!-- Replace with actual demo gif -->
+This project detects **animals in real time** using your laptop's webcam and the YOLOv8 object detection model. It filters out all non-animal objects and highlights only animals such as dogs, cats, elephants, and birds.
 
 ---
 
-## ✨ What This Project Does
+## 📷 Demo Snapshot
 
-- 🔍 Detects objects (e.g. people, cars, bottles) from webcam in real time
-- 🚀 Uses YOLOv8n (nano model) for high-speed inference
-- 🧠 Built in Python using Ultralytics' YOLOv8 API
-- 💡 Easily modifiable to support video input, image input, or recording output
+> Real-time animal detection preview:
+
+![demo](demo/demo.gif) <!-- Replace this with your own gif or screenshot -->
 
 ---
 
-## 🔧 Built With
+## 🧠 What It Detects
 
-- [Ultralytics YOLOv8](https://docs.ultralytics.com/)
-- [OpenCV](https://opencv.org/)
+Only the following animals (based on COCO dataset classes):
+
+- 🐶 Dog
+- 🐱 Cat
+- 🐴 Horse
+- 🐑 Sheep
+- 🐄 Cow
+- 🐘 Elephant
+- 🐻 Bear
+- 🦓 Zebra
+- 🦒 Giraffe
+- 🐦 Bird
+
+---
+
+## ⚙️ Technologies Used
+
 - Python 3.x
+- OpenCV
+- Ultralytics YOLOv8
 - NumPy
 
 ---
 
-## 🚀 Quickstart
+## 🚀 How to Run
 
-### 1️⃣ Clone the Repo
+### Step 1: Clone the Repo
 
 ```bash
 git clone https://github.com/YOUR_USERNAME/object-detection-laptop-camera.git
 cd object-detection-laptop-camera
 ```
 
-### 2️⃣ Set Up Virtual Environment
+### Step 2: Set Up Virtual Environment
 
 ```bash
 python -m venv venv
-source venv/Scripts/activate  # On Git Bash
+source venv/Scripts/activate  # For Git Bash
 ```
 
-> Or, if you're using CMD:
+> On CMD:
 
 ```cmd
 venv\Scripts\activate
 ```
 
-### 3️⃣ Install Dependencies
+### Step 3: Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-Or manually:
+> Or manually:
 
 ```bash
 pip install ultralytics opencv-python numpy
 ```
 
-### 4️⃣ Run the App
+### Step 4: Run the Detection Script
 
 ```bash
 python yolo_detect.py
 ```
 
-> Press `q` to close the camera window.
+> Press `q` to quit the webcam window.
 
 ---
 
-## 📁 File Overview
+## 📁 Project Structure
 
 ```
 object-detection-laptop-camera/
-├── yolo_detect.py         # Main script running YOLOv8 on webcam
-├── test_camera.py         # Simple webcam test script
-├── requirements.txt       # Python packages
-├── demo/                  # Folder for output GIFs/images
+├── yolo_detect.py         # Animal-only YOLOv8 detection
+├── test_camera.py         # Webcam test script
+├── requirements.txt       # Dependencies
+├── demo/                  # Screenshots or GIFs
 └── README.md              # This file
 ```
 
 ---
 
-## 🧠 Applications
+## 📈 Use Cases
 
-- Surveillance cameras
-- Interactive AI projects
-- Human detection for safety or automation
-- Robotics and drone vision
+- Wildlife detection systems
+- Smart pet monitoring
+- Educational demos
+- AI-powered surveillance in zoos or forests
 
 ---
 
-## 👤 Author
+## 👨‍💻 Author
 
 **Tushar Dhulasawant**  
-_Aerospace Engineer | Embedded Systems Developer | AI Enthusiast_
+_Aerospace & Embedded Systems Engineer with passion for AI and real-time systems_
 
 - 🔗 [LinkedIn](https://www.linkedin.com/in/tushar-dhulasawant)
 - 📧 tushardhulasawant5@gmail.com
@@ -109,4 +117,4 @@ _Aerospace Engineer | Embedded Systems Developer | AI Enthusiast_
 
 ## 📄 License
 
-MIT License – free to use and modify.
+This project is licensed under the MIT License.
